@@ -146,5 +146,5 @@ Improved fraud detection with better recall and balanced learning
 This comparison clearly shows why accuracy alone is misleading for imbalanced binary classification problems.
 
 
-![Before SMOTE](figure1.png)
-![After SMOTE](figure2.png)
+![Before SMOTE](Figure_1.png)
+![After SMOTE](Figure_2.png)
