@@ -1,73 +1,53 @@
 💳 Credit Card Fraud Detection
 Binary Classification using Machine Learning
-📌 Project Overview
 
+
+📌 Project Overview
 Credit card fraud is a serious financial problem where fraudulent transactions cause significant losses to both customers and banks.
 This project focuses on building a binary classification machine learning model that can identify whether a credit card transaction is fraudulent or legitimate.
 
 The project demonstrates how machine learning models behave on highly imbalanced real-world datasets and why accuracy alone is not a reliable metric.
 
 🎯 Problem Statement
-
 Given a dataset of credit card transactions, the goal is to classify each transaction into one of two classes:
-
 0 → Legitimate Transaction
-
 1 → Fraudulent Transaction
-
 This is a binary classification problem.
 
 📊 Dataset Information
-
 Dataset Name: Credit Card Fraud Detection
-
 Source: Kaggle
-
 File Name: creditcard.csv
-
 Total Transactions: ~284,000
-
 Fraud Cases: ~492 (highly imbalanced dataset)
 
 🔹 The dataset contains anonymized features (V1 to V28) generated using PCA, along with:
-
 Amount → Transaction amount
-
 Class → Target label (0 or 1)
 
 📥 Dataset Download Instructions
-
 Visit Kaggle
-
 Search for “Credit Card Fraud Detection”
-
 Download the dataset
-
 Place the file as:
-
-data/creditcard.csv
+creditcard.csv
 
 🧠 Machine Learning Approach
 ✔ Type of Learning
-
 Supervised Learning
 
 ✔ Problem Type
-
 Binary Classification
 
 ✔ Model Used
-
 Logistic Regression (baseline model)
 
 ✔ Key Challenge
-
 Severe class imbalance
 
 Fraud transactions are extremely rare compared to legitimate ones
 
 ⚙️ Project Workflow
-
 Load and inspect the dataset
 
 Analyze class imbalance
