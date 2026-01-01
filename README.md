@@ -124,7 +124,7 @@ The baseline model is trained on the original imbalanced dataset to establish a 
 
 📷 Confusion Matrix — Before SMOTE
 
-images/before_smote.png
+![Before SMOTE Confusion Matrix](images/before_smote.png)
 
 
 🔹 Observation:
@@ -141,7 +141,8 @@ SMOTE (Synthetic Minority Over-sampling Technique) is applied to balance the dat
 
 📷 Confusion Matrix — After SMOTE
 
-images/after_smote.png
+![After SMOTE Confusion Matrix](images/after_smote.png)
+
 
 
 🔹 Observation:
@@ -160,12 +161,14 @@ ROC Curve to measure class separation
 
 Precision–Recall Curve to evaluate performance on imbalanced data
 
-images/roc_curve.png
-images/pr_curve.png
+![ROC_curve](images/roc_curve.png)
+![PR_curve](images/pr_curve.png)
+
 
 🧠 Probability Calibration & Business Threshold
 
-images/bussiness_threesold.png
+![Bussiness Threeshold](images/bussiness_threesold.png)
+
 
 Model probabilities are calibrated to represent realistic fraud risk scores
 
