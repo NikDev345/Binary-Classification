@@ -1,73 +1,108 @@
-💳 Credit Card Fraud Detection
+🚨 CREDIT CARD FRAUD DETECTION
 Binary Classification using Machine Learning
-
-
 📌 Project Overview
-Credit card fraud is a serious financial problem where fraudulent transactions cause significant losses to both customers and banks.
-This project focuses on building a binary classification machine learning model that can identify whether a credit card transaction is fraudulent or legitimate.
 
-The project demonstrates how machine learning models behave on highly imbalanced real-world datasets and why accuracy alone is not a reliable metric.
+Credit card fraud detection is a critical real-world problem where fraudulent transactions are extremely rare compared to legitimate ones.
+This project builds an end-to-end binary classification system to identify fraudulent credit card transactions using machine learning, while carefully handling class imbalance, performance constraints, and real-world evaluation metrics.
+
+The project demonstrates engineering-level ML thinking, not just model training.
 
 🎯 Problem Statement
-Given a dataset of credit card transactions, the goal is to classify each transaction into one of two classes:
+
+Given a dataset of credit card transactions, classify each transaction as:
+
 0 → Legitimate Transaction
+
 1 → Fraudulent Transaction
-This is a binary classification problem.
+
+This is a binary classification problem with severe class imbalance, making it challenging and realistic.
 
 📊 Dataset Information
-Dataset Name: Credit Card Fraud Detection
-Source: Kaggle
-File Name: creditcard.csv
-Total Transactions: ~284,000
-Fraud Cases: ~492 (highly imbalanced dataset)
 
-🔹 The dataset contains anonymized features (V1 to V28) generated using PCA, along with:
-Amount → Transaction amount
-Class → Target label (0 or 1)
+Dataset Name: Credit Card Fraud Detection
+
+Source: Kaggle
+
+File Name: creditcard.csv
+
+Total Transactions: ~284,000
+
+Fraudulent Transactions: ~492
 
 📥 Dataset Download Instructions
-Visit Kaggle
+
+Go to Kaggle
+
 Search for “Credit Card Fraud Detection”
+
 Download the dataset
-Place the file as:
-creditcard.csv
+
+Place the file in the project as:
+
+data/creditcard.csv
+
+🧾 Dataset Description
+
+Each row represents one credit card transaction
+
+Features V1 to V28 are anonymized (PCA-transformed)
+
+Amount represents the transaction value
+
+Class is the target variable:
+
+0 → Legit
+
+1 → Fraud
+
+⚠️ Key Challenge: Class Imbalance
+
+Fraud transactions represent less than 0.2% of the data
+
+Accuracy alone is misleading
+
+Special techniques are required to correctly detect fraud
+
+This project explicitly addresses this issue.
 
 🧠 Machine Learning Approach
-✔ Type of Learning
+✔ Learning Type
+
 Supervised Learning
 
 ✔ Problem Type
+
 Binary Classification
 
-✔ Model Used
-Logistic Regression (baseline model)
+✔ Models Used
 
-✔ Key Challenge
-Severe class imbalance
+Logistic Regression (Baseline)
 
-Fraud transactions are extremely rare compared to legitimate ones
+Logistic Regression with SMOTE
 
 ⚙️ Project Workflow
-Load and inspect the dataset
 
-Analyze class imbalance
+Load and analyze the dataset
 
-Split features and target labels
+Apply sampling to handle hardware limitations
 
 Perform stratified train–test split
 
-Train a baseline Logistic Regression model
+Train a baseline model (Before SMOTE)
 
-Evaluate the model using multiple metrics
+Apply SMOTE to balance the dataset
 
-Handle class imbalance using SMOTE
+Train model After SMOTE
 
-Retrain the model and compare results
+Evaluate using appropriate metrics
+
+Calibrate probabilities
+
+Apply business-driven decision threshold
 
 📈 Evaluation Metrics
 
-Accuracy alone is misleading for imbalanced datasets.
-Therefore, the following metrics are used:
+To properly evaluate performance on an imbalanced dataset, the following metrics are used:
 
 Precision
 
@@ -77,13 +112,70 @@ F1-Score
 
 Confusion Matrix
 
-🔹 Recall is prioritized, because missing a fraudulent transaction is more costly than incorrectly flagging a legitimate one.
+ROC–AUC
 
-🧪 Handling Class Imbalance
+Precision–Recall AUC
 
-To improve fraud detection performance, SMOTE (Synthetic Minority Over-sampling Technique) is applied to balance the dataset by generating synthetic fraud samples.
+📌 Recall is prioritized, as missing a fraudulent transaction is more costly than flagging a legitimate one.
 
-This significantly improves the model’s ability to detect fraudulent transactions.
+🔍 Baseline Results (Before SMOTE)
+
+The baseline model is trained on the original imbalanced dataset to establish a reference.
+
+📷 Confusion Matrix — Before SMOTE
+
+(Image attached in repository)
+
+images/before_smote.png
+
+
+🔹 Observation:
+
+Very high accuracy
+
+Very poor fraud recall
+
+Model biased toward legitimate transactions
+
+🔥 Improved Results (After SMOTE)
+
+SMOTE (Synthetic Minority Over-sampling Technique) is applied to balance the dataset before training.
+
+📷 Confusion Matrix — After SMOTE
+
+(Image attached in repository)
+
+images/after_smote.png
+
+
+🔹 Observation:
+
+Improved fraud detection
+
+Better recall for fraudulent transactions
+
+More balanced learning
+
+📊 ROC Curve & Precision–Recall Curve
+
+The project includes:
+
+ROC Curve to measure class separation
+
+Precision–Recall Curve to evaluate performance on imbalanced data
+
+(Images attached in repository)
+
+images/roc_curve.png
+images/pr_curve.png
+
+🧠 Probability Calibration & Business Threshold
+
+Model probabilities are calibrated to represent realistic fraud risk scores
+
+A custom threshold is applied instead of the default 0.5
+
+This improves fraud detection based on business risk considerations
 
 🧰 Technologies & Libraries Used
 
@@ -101,30 +193,31 @@ Matplotlib
 
 Seaborn
 
-📊 Model Performance Visualization
+🚀 Key Learnings
 
-To better understand the impact of handling class imbalance, confusion matrix visualizations are included before and after applying SMOTE.
+Accuracy is not reliable for imbalanced datasets
 
-🔹 Before SMOTE (Imbalanced Dataset)
+Handling class imbalance is essential in fraud detection
 
-This confusion matrix shows the model performance on the original, highly imbalanced dataset.
-It highlights how the model struggles to correctly identify fraudulent transactions due to class imbalance.
+SMOTE significantly improves minority class detection
 
-🔹 After SMOTE (Balanced Dataset)
+Proper metrics and thresholds matter more than raw scores
 
-After applying SMOTE (Synthetic Minority Over-sampling Technique), the dataset becomes balanced.
-This confusion matrix demonstrates a significant improvement in recall for fraudulent transactions.
+Real-world ML requires balancing performance and system limits
 
-🧠 Key Observation
+🔮 Future Improvements
 
-Before SMOTE:
-High accuracy but very poor fraud detection (low recall)
+Try ensemble models (Random Forest, XGBoost)
 
-After SMOTE:
-Improved fraud detection with better recall and balanced learning
+Hyperparameter tuning
 
-This comparison clearly shows why accuracy alone is misleading for imbalanced binary classification problems.
+Time-aware validation
 
+Real-time fraud detection API
 
-![Before SMOTE](Figure_1.png)
-![After SMOTE](Figure_2.png)
+Web deployment using Streamlit
+
+✅ Conclusion
+
+This project demonstrates a complete, real-world binary classification pipeline for fraud detection.
+It emphasizes correct evaluation, imbalance handling, and engineering decisions, making it suitable for academic submission, GitHub portfolios, and interviews.
