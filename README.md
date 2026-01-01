@@ -39,7 +39,7 @@ Download the dataset
 
 Place the file in the project as:
 
-data/creditcard.csv
+creditcard.csv
 
 🧾 Dataset Description
 
@@ -124,8 +124,6 @@ The baseline model is trained on the original imbalanced dataset to establish a 
 
 📷 Confusion Matrix — Before SMOTE
 
-(Image attached in repository)
-
 images/before_smote.png
 
 
@@ -142,8 +140,6 @@ Model biased toward legitimate transactions
 SMOTE (Synthetic Minority Over-sampling Technique) is applied to balance the dataset before training.
 
 📷 Confusion Matrix — After SMOTE
-
-(Image attached in repository)
 
 images/after_smote.png
 
@@ -164,12 +160,12 @@ ROC Curve to measure class separation
 
 Precision–Recall Curve to evaluate performance on imbalanced data
 
-(Images attached in repository)
-
 images/roc_curve.png
 images/pr_curve.png
 
 🧠 Probability Calibration & Business Threshold
+
+images/bussiness_threesold.png
 
 Model probabilities are calibrated to represent realistic fraud risk scores
 
