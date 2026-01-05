@@ -5,6 +5,13 @@ Binary Classification using Machine Learning
 Credit card fraud detection is a critical real-world problem where fraudulent transactions are extremely rare compared to legitimate ones.
 This project builds an end-to-end binary classification system to identify fraudulent credit card transactions using machine learning, while carefully handling class imbalance, performance constraints, and real-world evaluation metrics.
 
+This is a Machine Learning Model 
+using python lib 
+that help us to find the Binary classifier 
+it will Help Dataset to refine and clear the cluster 
+
+Machine Learning Model Using Python Lib to classify dataset
+
 The project demonstrates engineering-level ML thinking, not just model training.
 
 🎯 Problem Statement
