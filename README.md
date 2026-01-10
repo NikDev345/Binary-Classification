@@ -208,24 +208,29 @@ Industry-grade performance for imbalanced classification
 ### 📷 Confusion Matrix — Before SMOTE
 
 ![Before SMOTE Confusion Matrix](images/before_smote.png)
+
 🔥 Improved Results (After SMOTE)
 ### 📷 Confusion Matrix — After SMOTE
 
 ![After SMOTE Confusion Matrix](images/after_smote.png)
+
 📊 ROC Curve & Precision–Recall Curve
 ### 📈 ROC Curve
 ![ROC Curve](images/roc_curve.png)
 
 ### 📉 Precision–Recall Curve
 ![PR Curve](images/pr_curve.png)
+
 🧠 Probability Calibration & Business Threshold
 ### 🧠 Business-Driven Threshold
 
 ![Business Threshold](images/bussiness_threesold.png)
+
 🚀 Advanced Model: XGBoost
 ## 🚀 Advanced Model: XGBoost
 
 A new advanced model is implemented in `xg_boost.py` using XGBoost to capture non-linear fraud patterns.
+
 📷 XGBoost Visualizations
 ### 📊 XGBoost Performance
 
@@ -247,6 +252,8 @@ A new advanced model is implemented in `xg_boost.py` using XGBoost to capture no
 | `bussiness_threesold.png` | Business threshold confusion matrix |
 | `xg_boost.png` | XGBoost model performance |
 | `pr_xgboost.png` | Precision–Recall curve for XGBoost |
+
+
 🧰 Technologies & Libraries Used
 
 Python
