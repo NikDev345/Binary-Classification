@@ -1,0 +1,22 @@
+text,label
+"salary credited to bank account",0
+"monthly electricity bill payment",0
+"grocery store card payment",0
+"movie ticket booking online",0
+"amazon order successful",0
+"fuel station card swipe",0
+"restaurant bill paid",0
+"mobile recharge completed",0
+"insurance premium paid",0
+"rent transferred to landlord",0
+
+"multiple failed otp attempts detected",1
+"transaction blocked due to suspicious activity",1
+"card used at unknown international merchant",1
+"unusual high value transaction flagged",1
+"login attempt from unknown device",1
+"account temporarily frozen for security reasons",1
+"rapid multiple transactions detected",1
+"atm withdrawal failed multiple times",1
+"suspicious ip address login detected",1
+"unauthorized card usage reported",1
