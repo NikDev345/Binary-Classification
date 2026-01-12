@@ -272,6 +272,59 @@ Matplotlib
 
 Seaborn
 
+## 📊 Dataset Information
+
+This project uses a **text-based transaction dataset** for binary fraud detection using **BERT NLP embeddings**.
+
+### 🔹 Dataset File
+- **File name:** `data.csv`
+- **Total samples:** 20
+- **Classes:**
+  - `0` → Legitimate transaction
+  - `1` → Fraudulent transaction
+
+### 🔹 Class Distribution
+- Legitimate transactions: 10
+- Fraudulent transactions: 10
+
+The dataset is intentionally kept small and balanced to:
+- Avoid stratification errors
+- Demonstrate BERT-based NLP classification clearly
+- Focus on model pipeline understanding rather than data volume
+
+> ⚠️ Note: This dataset is for **learning and demonstration purposes only**.  
+> Real-world fraud detection requires large, imbalanced datasets with cost-sensitive evaluation.
+
+---
+
+## 🧠 Text-Based Fraud Detection (NLP)
+
+Transaction descriptions are processed using **BERT (bert-base-uncased)** as a feature extractor.  
+The **[CLS] token embedding** is used to represent each transaction sentence, which is then passed to a traditional machine learning classifier.
+
+### 🔹 NLP Flow
+1. Raw transaction text
+2. BERT tokenization
+3. CLS embedding extraction
+4. Binary classification (Fraud / Legit)
+
+---
+
+## 🔀 Train–Test Split Strategy
+
+To preserve class balance, **stratified sampling** is used:
+
+python
+train_test_split(
+    X,
+    y,
+    test_size=0.3,
+    stratify=y,
+    random_state=42
+)
+
+![Dataset Preview](images/bert_nlp.png)
+
 🚀 Key Learnings
 
 Accuracy is unreliable for imbalanced datasets
