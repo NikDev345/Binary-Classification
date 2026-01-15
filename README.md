@@ -88,6 +88,8 @@ Logistic Regression with SMOTE
 
 XGBoost (Advanced Model)
 
+
+
 ⚙️ Project Workflow
 
 Load and analyze the dataset
@@ -363,3 +365,5 @@ Academic submission
 GitHub portfolios
 
 Technical interviews
+
+and Personal projects 
