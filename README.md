@@ -242,7 +242,53 @@ A new advanced model is implemented in `xg_boost.py` using XGBoost to capture no
 
 ![PR XGBoost](images/pr_xgboost.png)
 
+📊 Model Performance & Optimization
+🔹 Threshold Optimization
 
+Instead of using the default 0.5, the system:
+
+Computes Precision–Recall curve
+
+Selects the F1-optimal threshold
+
+Converts probabilities into business decisions
+
+🔹 Business Cost Evaluation
+
+A custom cost matrix is applied:
+
+False Negative (Missed Fraud) → High Cost
+
+False Positive (Blocked Legit Transaction) → Lower Cost
+
+This ensures decisions are financially optimized, not just statistically correct.
+
+📈 Visual Results
+🔹 Optimized XGBoost Performance
+
+This image shows:
+
+Confusion Matrix after threshold optimization
+
+Improved fraud recall with controlled false positives
+
+Balanced decision boundary for real-world deployment
+
+🔹 SHAP Explainability
+
+This image explains:
+
+Which features contribute most to fraud predictions
+
+How the model makes decisions
+
+Transparency required for banking & regulatory systems
+
+#xg_boost_optimize
+![XG_Boost_Otimize](images/xgboost_opotimize.png)
+
+#shap
+![shap](images/shap.png)
 | Risk Level | Action                 |
 | ---------- | ---------------------- |
 | LOW_RISK   | Allow transaction      |
