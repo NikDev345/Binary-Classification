@@ -284,11 +284,17 @@ How the model makes decisions
 
 Transparency required for banking & regulatory systems
 
-#xg_boost_optimize
+##xg_boost_optimize
 ![XG_Boost_Otimize](images/xgboost_optimize.png)
 
-#shap
+##SHAP
 ![shap](images/shap.png)
+
+##SHAP_OUTPUT
+![SHAP_OUTPUT](images/shap_Output.png)
+
+
+
 | Risk Level | Action                 |
 | ---------- | ---------------------- |
 | LOW_RISK   | Allow transaction      |
