@@ -241,19 +241,28 @@ A new advanced model is implemented in `xg_boost.py` using XGBoost to capture no
 ### 📉 Precision–Recall Curve (XGBoost)
 
 ![PR XGBoost](images/pr_xgboost.png)
-🖼️ Image Assets Summary (Optional but Professional)
 
-## 🖼️ Visualization Assets
 
-| Image | Description |
-|------|-------------|
-| `before_smote.png` | Confusion matrix before SMOTE |
-| `after_smote.png` | Confusion matrix after SMOTE |
-| `roc_curve.png` | ROC curve |
-| `pr_curve.png` | Precision–Recall curve |
-| `bussiness_threesold.png` | Business threshold confusion matrix |
-| `xg_boost.png` | XGBoost model performance |
-| `pr_xgboost.png` | Precision–Recall curve for XGBoost |
+| Risk Level | Action                 |
+| ---------- | ---------------------- |
+| LOW_RISK   | Allow transaction      |
+| REVIEW     | Flag for manual review |
+| HIGH_RISK  | Block transaction      |
+
+
+🖼️ Image Assets Summary 
+| Image                     | Description                                                                            |
+| ------------------------- | -------------------------------------------------------------------------------------- |
+| `before_smote.png`        | Confusion matrix before applying SMOTE, showing the impact of severe class imbalance   |
+| `after_smote.png`         | Confusion matrix after applying SMOTE, demonstrating improved minority-class detection |
+| `roc_curve.png`           | ROC curve showing the ranking ability of the baseline fraud detection model            |
+| `pr_curve.png`            | Precision–Recall curve highlighting minority-class performance of the baseline model   |
+| `bussiness_threesold.png` | Confusion matrix using a business-optimized probability threshold                      |
+| `xg_boost.png`            | Baseline XGBoost fraud detection performance using the default threshold               |
+| `pr_xgboost.png`          | Precision–Recall curve for the XGBoost fraud detection model                           |
+| `xg_boost_optimize.png`   | Optimized XGBoost results after threshold tuning and cost-aware decisioning            |
+| `shap.png`                | SHAP explainability plot showing feature contributions to fraud predictions            |
+
 
 
 🧰 Technologies & Libraries Used
