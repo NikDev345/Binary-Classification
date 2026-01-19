@@ -285,7 +285,7 @@ How the model makes decisions
 Transparency required for banking & regulatory systems
 
 #xg_boost_optimize
-![XG_Boost_Otimize](images/xgboost_opotimize.png)
+![XG_Boost_Otimize](images/xgboost_optimize.png)
 
 #shap
 ![shap](images/shap.png)
