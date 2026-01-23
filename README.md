@@ -64,6 +64,7 @@ Class: Target label
 
 
 🤖 Models Implemented
+
 1️⃣ Logistic Regression (Baseline)
 
 Trained on original imbalanced data
@@ -71,7 +72,9 @@ Trained on original imbalanced data
 Demonstrates why accuracy fails
 
 📉 Result:
+
 ✔ High accuracy
+
 ❌ Almost zero fraud recall
 
 2️⃣ Logistic Regression + SMOTE
@@ -81,7 +84,9 @@ Uses Synthetic Minority Over-sampling Technique
 Balances learning without touching test data
 
 📈 Result:
+
 ✔ Significant recall improvement
+
 ✔ Better minority-class learning
 
 3️⃣ 🚀 XGBoost (Industry-Grade Model)
@@ -89,7 +94,9 @@ Balances learning without touching test data
 Implemented in xg_boost.py
 
 ✔ Captures non-linear fraud patterns
+
 ✔ Uses scale_pos_weight for imbalance
+
 ✔ Optimized using PR-AUC, not accuracy
 
 📊 Outcome:
