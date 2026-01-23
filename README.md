@@ -51,22 +51,16 @@ Class: Target label
 🧩 Core Challenges Addressed
 
 ✔ Extreme class imbalance
+
 ✔ Hardware & performance constraints
+
 ✔ Metric selection beyond accuracy
+
 ✔ Probability calibration
+
 ✔ Business-aware thresholding
+
 ✔ Model explainability (SHAP)
-
-
-flowchart LR
-A[Raw Data] --> B[EDA & Sampling]
-B --> C[Train-Test Split]
-C --> D[Baseline Model]
-D --> E[SMOTE Balancing]
-E --> F[Improved Model]
-F --> G[Threshold Optimization]
-G --> H[XGBoost Advanced Model]
-H --> I[Explainability & Risk Decisions]
 
 
 🤖 Models Implemented
