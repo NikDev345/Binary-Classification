@@ -1,6 +1,6 @@
 🚨 Credit Card Fraud Detection
 Binary Classification | Imbalanced Learning | Business-Driven ML
-<p align="center"> <img src="images/image.WEBLP" alt="Fraud Detection Banner" width="90%"> </p>
+<p align="center"> <img src="images/image.webp" alt="Fraud Detection Banner" width="90%"> </p>
 
 Fraud detection is not a modeling problem — it is a decision-making problem under extreme imbalance.
 This project demonstrates an end-to-end, production-oriented machine learning pipeline for detecting fraudulent credit card transactions, focusing on engineering choices, evaluation correctness, and business risk optimization.
