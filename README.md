@@ -3,6 +3,7 @@ Binary Classification | Imbalanced Learning | Business-Driven ML
 <p align="center"> <img src="images/image.webp" alt="Fraud Detection Banner" width="50%"> </p>
 
 Fraud detection is not a modeling problem — it is a decision-making problem under extreme imbalance.
+
 This project demonstrates an end-to-end, production-oriented machine learning pipeline for detecting fraudulent credit card transactions, focusing on engineering choices, evaluation correctness, and business risk optimization.
 
 🔥 Why This Project Matters
@@ -167,7 +168,9 @@ This aligns predictions with financial reality, not math purity.
 🔍 Explainability with SHAP
 
 ✔ Feature-level contribution analysis
+
 ✔ Transaction-level decision explanation
+
 ✔ Required for banking & regulatory trust
 
 This makes the model auditable, not a black box.
@@ -185,10 +188,15 @@ Samples: 20 (balanced)
 Purpose: Learning & demonstration
 
 🔹 NLP Flow
+
 Transaction Text
+
 → BERT Tokenization
+
 → CLS Embedding
+
 → Binary Classifier
+
 
 
 ⚠️ This module demonstrates architecture, not real-world scale.
@@ -214,10 +222,15 @@ Transformers (BERT)
 🚀 Key Engineering Takeaways
 
 ✔ Accuracy is misleading
+
 ✔ Recall beats precision in fraud
+
 ✔ SMOTE changes learning dynamics
+
 ✔ Thresholds matter more than models
+
 ✔ XGBoost dominates linear models
+
 ✔ Explainability is non-negotiable
 
 🔮 Upcoming Updates (Work in Progress)
@@ -239,6 +252,7 @@ This commit is an update — more advanced versions are coming.
 ✅ Final Note
 
 This project is not a toy ML notebook.
+
 It reflects real-world fraud detection thinking — the kind expected in:
 
 Technical interviews
