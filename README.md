@@ -263,8 +263,6 @@ Academic evaluation
 
 Serious GitHub portfolios
 
-will update this repo soon 
-stay tuned
-
-
 ⭐ If you understand why each decision was made here, you already think beyond beginner ML.
+
+THANK YOU <3
